@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Yamaha</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		
+	</head>
+	<body>
+		<header class="header center">
+			<div class="header__left">
+				<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+				<a href="#" class="header__yamaha">Yamaha</a>
+			</div>
+			<div class="header__right">
+                <a class="nav__link" href="#about">О нас</a>
+                <a class="nav__link" href="#services">Услуги</a>
+                <a class="nav__link" href="#contacts">Контакты</a>
+			</div>
+		</header>
+		<section class="slider">
+			<div class="slider__box">
+				<img class="slider__img" src="img/yzf-r1.jpg" id="img-1" class="topslide">
+				<img class="slider__img" src="img/yzf-r1-street.jpg" id="img-2">
+				<img class="slider__img" src="img/yzf-r1-max.jpg" id="img-3">
+			</div>
+			<div class="slider__control">
+				<button class="slider__button" name="control" data-slide="1">
+				<button class="slider__button" name="control" data-slide="2">
+				<button class="slider__button" name="control" data-slide="3">
+			</div>
+		</section>
+		<main class="center">
+			<div id="about"></div>
+			<section class="text">
+				<h2>О нас</h2>
+				<p>Уникальный стиль Yamaha лучше всего описывают эти пять слов: Innovation (Инновации), Excitement (Азарт), Confidence (Уверенность), Emotion (Эмоции) и Ties (Связи). Сотрудники компании должны помнить об этом, чтобы Yamaha никогда не прекращала совершенствоваться в выбранном направлении. Глубокое понимание и уважение к этой концепции позволят нам вывести ценность бренда на новый уровень и сделать его одним из самых ярких игроков на мировой арене. Наши нестандартные, смелые идеи способны сделать жизнь людей по всему миру по-настоящему полной.
+				</p>
+				<img class="about__img img" src="img/service1.jpg">
+				<p>Основатель Yamaha Motor Геничи Каваками любил повторять: «Создавайте спрос своими усилиями». Мы не просто продаем продукты, предлагая новые возможности, но стремимся самостоятельно расширять рынок за счет активного маркетинга и коммуникаций, которые помогают клиентам осознавать функциональность наших продуктов и получать удовольствие от их использования. Именно это имел в виду господин Каваками: мы должны быть теми, кто создает новых клиентов Yamaha.
+				</p>
+				<img class="about__img img" src="img/service2.jpg">
+				<p>Управляемость — это важный фактор, который определяет как ощущения за рулем мотоцикла, так и его характер. Мы всегда стремились создавать продукты, которые вдохновляют клиентов своими ходовыми качествами, и эта стратегия не ограничивается мотоциклами, но распространяется на все наши продукты и процессы.
+				</p>
+				<img class="about__img img" src="img/service3.jpg">
+			</section>
+			<div id="services"></div>
+			<section class="text">
+				<h2>Услуги</h2>
+				<ul>
+					<li>Сервисное обслуживание</li>
+					<li>Оригинальные аксессуары</li>
+					<li>Оригинальные масла Yamalube</li>
+					<li>Скутеры</li>
+					<li>Мотоциклы</li>
+				</ul>
+				
+				<div class="moto">
+					<div class="moto__item">
+						<img src="img/yzf-r1-min.jpg" class="img">
+						<h3>YZF-R1</h3>
+						<span class="moto__price">$ 300 000</span>
+					</div>
+					<div class="moto__item">
+						<img src="img/yzf-r1m-min.jpg" class="img">
+						<h3>YZF-R1M</h3>
+						<span class="moto__price">$ 500 000</span>
+					</div>
+					<div class="moto__item">
+						<img src="img/yzf-r1s-min.jpg" class="img">
+						<h3>YZF-R1S</h3>
+						<span class="moto__price">$ 450 000</span>
+					</div>
+					<div class="moto__item">
+						<img src="img/yzf-r6-min.jpg" class="img">
+						<h3>YZF-R6</h3>
+						<span class="moto__price">$ 350 000</span>
+					</div>
+				</div>
+			</section>
+			<div id="contacts"></div>
+			<section class="text">
+				<h2>Контакты</h2>
+				<p>Наши филиалы:</p>
+				<div id="stores" class="stores"></div>
+				
+				<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+				<div id="map" style="width: 100%; height: 400px;"></div>
+			</section>
+		</main>
+		<footer>
+            <div class="footer__icons">
+				<a href="https://www.facebook.com/" class="footer__icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+				<a href="https://www.instagram.com/" class="footer__icon">
+					<i class="fab fa-instagram"></i>
+                </a>
+				<a href="https://www.pinterest.com/" class="footer__icon">
+					<i class="fab fa-pinterest-p"></i>
+                </a>
+				<a href="https://www.twitter.com/" class="footer__icon">
+					<i class="fab fa-twitter"></i>
+                </a>
+			</div>
+            <div class="footer__copy">&copy; 2021 Yamaha</div>
+			
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>

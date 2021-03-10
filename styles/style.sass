@@ -1,0 +1,141 @@
+@import vars
+@import mixins
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: Arial
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    min-height: 100%
+    background-color: $background
+
+h2
+    font-size: 24px
+    line-height: 19px
+    color: $accent
+    margin: 20px auto
+    text-align: center
+
+a
+    text-decoration: none
+ 
+li
+    margin-left: 15px
+
+p
+    margin-top: 14px
+    margin-bottom: 14px
+    
+.center
+    padding-left: 16px
+    padding-right: 16px
+		
+.header
+    height: 43px
+    align-items: center
+    +onthesides()
+    align-items: flex-start
+
+    &__left
+        background-color: $accent
+        padding: 5px
+        +centerFlex()
+
+    &__yamaha
+        +heading()
+        color: $background
+        text-transform: uppercase
+
+    &__right
+        +onthesides()
+        flex-wrap: wrap
+        background: rgba(238, 59, 51, 0.5)
+        z-index: 10
+        position: fixed
+        margin-left: 76px
+
+.nav__link
+    color: $main-color 
+    display: block
+    font-size: 18px
+    font-weight: 300
+    padding: 10px
+
+    &:hover
+        background-color: $grey
+    
+
+.slider
+    display: none
+
+#about, #services, #contacts
+    height: 45px
+
+.text
+    +centerFlex()
+
+.about__img
+    width: 100%
+
+.moto
+    +centerFlex()
+    &__item
+        +onthesides()
+        align-items: center
+
+.stores
+    +centerFlex()
+    align-items: flex-start
+    margin-bottom: 45px
+    &__box
+        +centerFlex()
+        margin: 0 20px
+    &__name
+        +onthesides()
+        color: $blue
+        +heading()
+        border-bottom: 2px dotted $blue
+        cursor: pointer
+    &__item
+        display: none
+        +centerFlex() 
+
+.img-click
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: 0 0 50px rgba(0,0,0,0.8)
+
+.footer
+    height: 79px
+    background-color: $footer-color
+    align-items: center
+    color: white
+    +centerFlex()
+
+    &__icons
+        display: flex
+        justify-content: center
+
+    &__icon
+        display: block
+        width: 32px
+        height: 32px
+        background-color: $background
+        color: black
+        text-align: center
+        line-height: 32px
+        margin-left: 7px
+
+    &__copy
+        background-color: $grey
+        flex-direction: row
+
+@import m668
+
+@import m1024

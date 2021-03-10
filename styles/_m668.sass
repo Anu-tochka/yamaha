@@ -1,0 +1,57 @@
+@media ( min-width: 668px )
+    .center
+        padding-left: calc(50% - 369px)
+        padding-right: calc(50% - 369px)
+
+    .slider
+        display: block
+        +centerFlex()
+        top: 40px
+        position: relative
+        height: 460px
+		
+        &__box
+            width: 660px
+            height: 434px
+            position: relative
+            padding-bottom: 64px
+
+        &__img
+            position: absolute
+            width: 100%
+			
+        &__control
+            width: 100px
+            +onthesides()
+        &__button
+            width: 20px
+            height: 20px
+            border-radius: 50%	
+
+    .topslide
+        z-index: 1
+    
+    .text
+        padding: 0px 34px
+
+    .about__img
+        width: 349px
+        margin: 0 auto
+
+    .moto
+        +onthesides()
+        flex-wrap: wrap
+        &__item
+            +centerFlex()
+            margin: 0 20px
+    
+    .stores
+        +onthesides()
+        flex-wrap: wrap
+        &__box
+            width: 40%  
+        &__item
+            display: none
+
+    .footer
+        +onthesides()
